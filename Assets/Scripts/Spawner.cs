@@ -9,6 +9,8 @@ public class Spawner : MonoBehaviour
     GameObject _ball;
 
     private float spawnSpeed = 2f;
+    
+    
 
     // Start is called before the first frame update
     void Start()

@@ -19,6 +19,10 @@ public class Floor : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("collided");
+        if (collision.tag == "ball") {
+            collision.GetComponent<Ball>().CallAddPoints();
+        }
+        
         Destroy(collision.gameObject);
     }
 }
